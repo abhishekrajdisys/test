@@ -2,7 +2,7 @@ name: Trigger Action on a CRON Schedule
 
 on:
   schedule:
-    - cron: '5 19 * * *' # Runs at 12:30 AM IST every day
+    - cron: '16 19 * * *' # Runs at 12:30 AM IST every day
 
 jobs:
   build:
@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run hellop.py
-        run: python hellop.py
+      - name: Run hello.py
+        run: python hello.py
