@@ -1,0 +1,15 @@
+name: Trigger Action on a CRON Schedule
+
+on:
+  schedule:
+    - cron: '30 0 * * *' # Runs at 12:30 AM every day
+
+jobs:
+  build:
+    name: Trigger Code Checkout
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run hello.py
+        run: python hello.py
