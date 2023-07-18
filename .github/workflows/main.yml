@@ -2,7 +2,7 @@ name: Trigger Action on a CRON Schedule
 
 on:
   schedule:
-    - cron: '30 19 * * *' # Runs at 12:30 AM IST every day
+    - cron: '5 19 * * *' # Runs at 12:30 AM IST every day
 
 jobs:
   build:
