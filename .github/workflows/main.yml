@@ -1,6 +1,7 @@
 name: Trigger Action on a CRON Schedule
 
 on:
+   workflow_dispatch:
 #   schedule:
 #     - cron: '16 19 * * *' # Runs at 12:30 AM IST every day
 
