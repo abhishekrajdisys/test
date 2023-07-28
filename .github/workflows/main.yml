@@ -11,5 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run hello.py
-        run: python hello.py
+      - name: Install dependencies
+        run: pip install os
+
+      - name: Run your code with secrets
+        env:
+          USERNAME: "abhishek"
+         
+        run: python count.py
